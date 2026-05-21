@@ -12,7 +12,8 @@
 name: "Frogbot Scan and Fix"
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
+  workflow_dispatch: # The repository will be scanned on demand
 permissions:
   contents: write
   pull-requests: write
